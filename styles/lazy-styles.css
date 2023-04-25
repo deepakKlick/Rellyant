@@ -1,1 +1,38 @@
 /* below the fold CSS goes here */
+body.fixed{
+    overflow: hidden;
+}
+.fixed-isi{
+    position: fixed;
+    bottom: 0;
+    padding: 1rem 0;
+    max-height: 75px;
+    width: 100vw;
+    background-color: var(--brand-color);
+    color: white;
+    transition: max-height 300ms cubic-bezier(0, 1, 0, 1);
+    cursor: pointer;
+}
+.fixed-isi h3,
+.fixed-isi ul,
+.fixed-isi p{
+    display: none;
+}
+.fixed-isi > div{
+    max-width: 1230px;
+    margin:auto;
+}
+.hide-fixed-isi{
+    display: none;
+}
+.fixed-isi.expanded{
+    max-height: calc(100vh - 200px);
+    transition: max-height 300ms ease-in-out;
+    overflow: scroll;
+}
+
+.fixed-isi.expanded h3,
+.fixed-isi.expanded ul,
+.fixed-isi.expanded p{
+    display: block;
+}
