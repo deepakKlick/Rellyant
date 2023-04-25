@@ -7,8 +7,9 @@ footer .footer {
   width: 100%;
   max-width: 1290px;
   margin: auto;
-  background-color: var(--background-color);
+  background-color: var(--brand-color);
 }
+
 
 footer .footer p {
   margin: 0;
@@ -34,7 +35,7 @@ footer div ul {
 footer div ul li,
 footer div ul li a,
 footer div ul li a:any-link{
-  color: var(--color-brand);
+  color: var(--text-color-white);
   font-size: 14px;
   text-decoration: underline;
 }
@@ -59,5 +60,5 @@ footer .footer .footer-copyright div picture img {
   height: auto;
 }
 footer .footer .footer-copyright {
-  color: var(--color-brand);
+  color: var(--text-color-white);
 }
