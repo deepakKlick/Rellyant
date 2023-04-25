@@ -107,8 +107,8 @@ h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
 p, dl, ol, ul, pre, blockquote {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 hr {
@@ -239,12 +239,12 @@ main img {
 }
 
 main .section {
-  padding: 64px 16px;
+  padding: 0;
 }
 
 @media (min-width: 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 0;
   }
 }
 
