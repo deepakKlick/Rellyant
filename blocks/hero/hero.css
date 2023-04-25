@@ -11,14 +11,21 @@ main .hero-container {
 main .hero {
   position: relative;
   padding: 32px;
-  min-height: 300px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+main .hero picture {
+  filter: brightness(.8);
 }
 
 main .hero h1 {
-  max-width: 1200px;
+  max-width: 1290px;
   margin-left: auto;
   margin-right: auto;
   color: white;
+  display: flex;
+  justify-content: flex-end;
 }
 
 main .hero picture {
