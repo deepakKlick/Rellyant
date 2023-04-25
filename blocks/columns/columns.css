@@ -33,8 +33,10 @@
 }
 
 /* Three columns layout */
-.columns-3-cols {
-  margin-top: -2.5rem;
+@media only screen and (min-width: 900px){
+  .columns-3-cols {
+    margin-top: -2.5rem;
+  }
 }
 .columns-3-cols > div{
   display: flex;
@@ -48,9 +50,9 @@
   -webkit-box-shadow: 1px 0 26px 7px rgba(206,194,215,.62);
   box-shadow: 1px 0 26px 7px rgba(206,194,215,.62);
   display: flex;
-  margin: 0 15px;
+  margin: 0 15px 2rem;
   min-height: 285px;
-  padding: 5px 20px;
+  padding: 30px 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
