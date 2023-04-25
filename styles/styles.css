@@ -12,12 +12,15 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
+  --brand-color: #333;
+  --brand-lighter-color: #eee;
+  --link-color: #2020E0;
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
-  --text-color: #000;
+  --text-color-black: #000;
+  --text-color-white: #fff;
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
@@ -40,7 +43,16 @@
   /* nav height */
   --nav-height: 64px;
 
+  /*Breakpoints*/ 
+--mobile-bp-xs: 376px; 
+--mobile-bp: 576px;
+--tablet-bp: 768px;
+--laptop-bp: 992px;
+--sm-desktop-bp: 1024px;
+--desktop-bp: 1440px;
+
 }
+
 
 @media (min-width: 900px) {
   :root {
@@ -58,13 +70,19 @@ body {
   margin: 0;
   font-family: var(--body-font-family);
   line-height: 1.6;
-  color: var(--text-color);
+  color: var(--text-color-black);
   background-color: var(--background-color);
   display: none;
 }
 
 body.appear {
   display: unset;
+}
+
+.section {
+  width: 100%;
+  max-width: 1290px;
+  margin: auto;
 }
 
 header {
@@ -165,7 +183,7 @@ button:disabled, button:disabled:hover {
 a.button.secondary, button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
-  color: var(--text-color)
+  color: var(--text-color-black)
 }
 
 main input {
@@ -177,13 +195,13 @@ main input {
   padding: 0.75rem 0.6rem;
   border-radius: 0.25rem;
   box-sizing: border-box;
-  border: 1px solid var(--text-color);
-  color: var(--text-color);
+  border: 1px solid var(--text-color-black);
+  color: var(--text-color-black);
   background-color: var(--background-color);
 }
 
 main input:hover {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--text-color-black);
 }
 
 main blockquote {
