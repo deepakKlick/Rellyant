@@ -29,6 +29,10 @@ function buildHeroBlock(main) {
     const section = document.createElement('div');
     section.append(buildBlock('hero', { elems: [picture, h1, ...h5, a] }));
     main.prepend(section);
+    const sibling = section.nextElementSibling;
+    if (sibling) { // remove empty sibling if exists
+      if (!sibling.textContent.trim().length) sibling.remove();
+    }
   }
 }
 

@@ -240,6 +240,13 @@ main img {
 
 main .section {
   padding: 0;
+  background-color: var(--overlay-background-color);
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  margin-top: 2.5rem;
+}
+main .section > div{
+  padding: 3rem 0;
 }
 
 @media (min-width: 600px) {

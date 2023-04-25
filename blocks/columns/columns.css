@@ -1,3 +1,8 @@
+main .columns-container{
+  background: none;
+  border-radius: 0;
+  margin-top: 0;
+}
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -35,7 +40,7 @@
 /* Three columns layout */
 @media only screen and (min-width: 900px){
   .columns-3-cols {
-    margin-top: -2.5rem;
+    margin-top: -5rem;
   }
 }
 .columns-3-cols > div{
