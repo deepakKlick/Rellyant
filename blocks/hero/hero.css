@@ -26,7 +26,7 @@ main .hero {
 }
 
 main .hero picture {
-  filter: brightness(.8);
+  filter: brightness(.7);
 }
 main .hero h1,
 main .hero h5{
