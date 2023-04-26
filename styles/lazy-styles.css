@@ -13,7 +13,7 @@ body.fixed{
 }
 @media(max-width: 1320px) { 
   .fixed-isi .fixed-isi-title {
-    padding: 0 20px 0 20px;
+    padding: 0 2rem 0 2rem;
   }
 }
 .fixed-isi-title {
@@ -40,7 +40,7 @@ body.fixed{
     border-right: 2px solid var(--text-color-white);
     height: 10px;
     margin-bottom: 15px;
-    margin-right: 40px;
+    margin-right: 4rem;
     margin-top: 10px;
     width: 10px;
     transform: rotate(45deg);
@@ -50,7 +50,7 @@ body.fixed{
   }
   @media(max-width: 1320px) { 
     .fixed-isi .default-content-wrapper{
-      padding: 0 20px;
+      padding: 0 2rem;
       max-height: 150px !important;
     }
   }
