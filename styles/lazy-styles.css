@@ -103,3 +103,6 @@ body.fixed{
   .isi ul li {
     line-height: 1.6;
   }
+  .isi  ul {
+    list-style: disc;
+}
