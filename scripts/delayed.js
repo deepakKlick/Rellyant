@@ -9,7 +9,7 @@ sampleRUM('cwv');
 //ISI Stuff
 const isi = document.querySelectorAll('.isi')[0];
 const fixedISI = document.createElement('div');
-const isiTitle = document.querySelectorAll('.isi h2')[0];
+const isiTitle = document.querySelectorAll('.isi h2')[0].cloneNode(true);
 const fixedIsiTitle = document.createElement('div');
 const body = document.getElementsByTagName('body')[0];
 

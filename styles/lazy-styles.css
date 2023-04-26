@@ -43,6 +43,9 @@ body.fixed{
   .fixed-isi.expanded .fixed-isi-title h2:after {
     transform: rotate(-135deg);
   }
+  .fixed-isi .default-content-wrapper h2:first-child {
+    display: none;
+  }
   .fixed-isi .default-content-wrapper {
     max-height: 140px;
     max-width: 1290px;
@@ -63,7 +66,6 @@ body.fixed{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    line-height: 1.6;
   }
 .hide-fixed-isi{
     display: none;
@@ -91,4 +93,13 @@ body.fixed{
   .isi a {
     color: var(--brand-color);
     text-decoration: underline;
+  }
+  .isi .default-content-wrapper h2:first-child {
+    font-size: 22px;
+    margin: 0 0 2rem;
+  }
+  .isi h3, 
+  .isi p,
+  .isi ul li {
+    line-height: 1.6;
   }
