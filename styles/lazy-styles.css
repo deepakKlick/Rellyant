@@ -11,6 +11,11 @@ body.fixed{
     cursor: pointer;
     background: var(--brand-lighter-color);
 }
+@media(max-width: 1320px) { 
+  .fixed-isi .fixed-isi-title {
+    padding: 0 20px 0 20px;
+  }
+}
 .fixed-isi-title {
     width: 100vw;
     background-color: var(--brand-color);
@@ -31,11 +36,11 @@ body.fixed{
   .fixed-isi .fixed-isi-title h2:after {
     content: "";
     display: block;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-bottom: 2px solid var(--text-color-white);
+    border-right: 2px solid var(--text-color-white);
     height: 10px;
     margin-bottom: 15px;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-top: 10px;
     width: 10px;
     transform: rotate(45deg);
