@@ -9,10 +9,23 @@ sampleRUM('cwv');
 //ISI Stuff
 const isi = document.querySelectorAll('.isi')[0];
 const fixedISI = document.createElement('div');
+const isiTitle = document.querySelectorAll('.isi h2')[0];
+const fixedIsiTitle = document.createElement('div');
 const body = document.getElementsByTagName('body')[0];
-fixedISI.innerHTML = isi.innerHTML;
-fixedISI.classList.add('fixed-isi');
+
+
+fixedIsiTitle.classList.add('fixed-isi-title');
+
+// Add isiTitle element to fixedIsiTitle element
+fixedIsiTitle.appendChild(isiTitle);
+
+// Add fixedIsiTitle element to fixedISI element
+fixedISI.appendChild(fixedIsiTitle);
+
+fixedISI.innerHTML += isi.innerHTML;
+fixedISI.classList.add('isi', 'fixed-isi');
 isi.parentNode.append(fixedISI);
+
 
 function toggle(el, classname){
     el.classList.toggle(classname);

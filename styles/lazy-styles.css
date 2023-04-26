@@ -5,28 +5,71 @@ body.fixed{
 .fixed-isi{
     position: fixed;
     bottom: 0;
-    padding: 1rem 0;
-    max-height: 75px;
-    width: 100vw;
-    background-color: var(--brand-color);
-    color: white;
+    padding: 0;
+    color: var(--text-color-white);
     transition: max-height 300ms cubic-bezier(0, 1, 0, 1);
     cursor: pointer;
+    background: var(--brand-lighter-color);
 }
-.fixed-isi h3,
-.fixed-isi ul,
-.fixed-isi p{
-    display: none;
+.fixed-isi-title {
+    width: 100vw;
+    background-color: var(--brand-color);
 }
-.fixed-isi > div{
-    max-width: 1230px;
-    margin:auto;
-}
+.fixed-isi .fixed-isi-title h2 {
+    color: var(--text-color-white);
+    font-size: 18px;
+    max-width: 80%;
+    padding: 15px 0;
+    max-width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fixed-isi .fixed-isi-title h2:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    height: 10px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+  }
+  .fixed-isi.expanded .fixed-isi-title h2:after {
+    transform: rotate(-135deg);
+  }
+  .fixed-isi .default-content-wrapper {
+    max-height: 140px;
+    max-width: 1290px;
+    margin: 30px auto 0;
+  }
+  .fixed-isi.expanded .default-content-wrapper {
+    max-height: 100%;
+  }
+  .fixed-isi h3, 
+  .fixed-isi p,
+  .fixed-isi ul li {
+    color: var(--brand-color);
+  }
+  .fixed-isi h3,
+  .fixed-isi p {
+    margin: 20px 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.6;
+  }
 .hide-fixed-isi{
     display: none;
 }
-.fixed-isi.expanded{
-    max-height: calc(100vh - 200px);
+.fixed-isi.expanded {
+    max-height: calc(100vh - 63px);
     transition: max-height 300ms ease-in-out;
     overflow: scroll;
 }
@@ -36,3 +79,16 @@ body.fixed{
 .fixed-isi.expanded p{
     display: block;
 }
+
+/* ISI global styling */
+.isi h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .isi p {
+    font-size: 16px;
+  }
+  .isi a {
+    color: var(--brand-color);
+    text-decoration: underline;
+  }
