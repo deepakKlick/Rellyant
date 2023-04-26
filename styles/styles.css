@@ -254,9 +254,6 @@ main .section ul li ul{
 main .section.gray-background-section{
   background-color: var(--overlay-background-color);
 }
-main .section.gray-background-section ul {
-  list-style: none;
-}
 main .section.gray-background-section ul li a {
   text-decoration: underline;
 }
