@@ -114,6 +114,6 @@ body.fixed{
   .isi ul li {
     line-height: 1.6;
   }
-  .isi  ul {
+  main .isi.section  ul {
     list-style: disc;
 }
