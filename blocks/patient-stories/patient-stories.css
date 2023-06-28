@@ -1,0 +1,64 @@
+.patient-stories-wrapper{}
+.patient-stories{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.story{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.story img{
+  transition: all 300ms ease-in-out;
+  transform-origin: center;
+}
+.story-name{
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+.story-overlay{
+  position: absolute;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  z-index: 1;
+}
+.patient-stories.full-layout .story:hover img{
+  transform: scale(1.2);
+  z-index: 0;
+}
+.patient-stories.full-layout .story:hover .story-overlay{
+  opacity: 1;
+}
+@media only screen and (min-width: 768px){
+  .patient-stories{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .story{
+    width: calc(90% / 2);
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  .story{
+    width: calc(90% / 3);
+  }
+}

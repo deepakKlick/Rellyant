@@ -10,6 +10,7 @@ body.fixed{
     transition: max-height 300ms cubic-bezier(0, 1, 0, 1);
     cursor: pointer;
     background: var(--brand-lighter-color);
+    z-index: 10;
 }
 @media(max-width: 1320px) { 
   .fixed-isi .fixed-isi-title {
