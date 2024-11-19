@@ -1,0 +1,22 @@
+.modelviewer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+model-viewer{
+    width: 600px;
+    height: 600px;
+}
+
+.two-column.modelviewer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 1200px) {
+    .two-column.modelviewer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

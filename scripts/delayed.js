@@ -50,3 +50,12 @@ fixedISI.addEventListener('click', (e) => {
     toggle(fixedISI,'expanded');
     fixedISI.scrollTop = 0;
 });
+
+
+
+if (document.querySelectorAll('.modelviewer').length > 0) {
+    const script = document.createElement('script');
+    script.src = 'https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js';
+    script.setAttribute('type', 'module');
+    document.head.append(script);
+}
